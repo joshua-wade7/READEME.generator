@@ -3,7 +3,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const generateMarkdown = require("");
+const generateMarkdown = require("./generateMarkdown");
 // TODO: Create an array of questions for user input
 // const questions = []; //using inquirer.prompt instead.
 
@@ -12,6 +12,7 @@ const generateMarkdown = require("");
 // return
 inquirer
   .prompt([
+    //why is this all of a sudden not allowing me to answer each prompt?
     {
       type: "input",
       name: "username",
@@ -76,11 +77,11 @@ inquirer
 // };
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
-promptUser();
-const generateREADME = { username, email };
+// promptUser();
+// const generateREADME = { username, email };
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
 // Function call to initialize app
 // init();
