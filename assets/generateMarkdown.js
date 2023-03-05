@@ -21,6 +21,8 @@ const generateMarkdown = ({
   credits,
   testing,
   license,
+  username,
+  email,
 }) =>
   `# ${title}
 
@@ -31,14 +33,14 @@ ${description}
 
 ## Table of Contents
 
-[Go to Title](#-title)
-[Go to Description](#-description)
-[Go to Installation](#-installation)
-[Go to Usage](#-usage)
-[Go to Contributor Guidelines](#-guidelines)
-[Go to Credits](#-credits)
-[Go to Test Instructions](#-testing) 
-[Go to Questions](#-questions)
+[Go to Title](#title)
+[Go to Description](#description)
+[Go to Installation](#installation)
+[Go to Usage](#usage)
+[Go to Contributor Guidelines](#contributing)
+[Go to Credits](#credits)
+[Go to Test Instructions](#testing) 
+[Go to Questions](#questions)
 
 ## Installation
 
@@ -66,7 +68,8 @@ ${license}
 
 ## Questions
 
-//finish typing out the questions here and include the links to github and email
+You can find me on GitHub at ${username} click [here](https://github.com/joshua-wade7) for link.
+Contact me at ${email} with any questions or ideas for future development!
 
 `;
 

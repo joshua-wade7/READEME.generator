@@ -8,83 +8,84 @@ const generateMarkdown = require("./generateMarkdown");
 // const questions = []; //using inquirer.prompt instead.
 
 //Prompt array for asking user questions
-// const promptUser = () => {
-// return
-inquirer
-  .prompt([
-    //why is this all of a sudden not allowing me to answer each prompt?
-    {
-      type: "input",
-      name: "username",
-      message: "What is your GitHub username?",
-    },
-    {
-      type: "input",
-      name: "email",
-      message: "What is your email address?",
-    },
-    {
-      type: "input",
-      name: "title",
-      message: "What is your project's name?",
-    },
-    {
-      type: "input",
-      name: "description",
-      message: "Please provide a short description of your project",
-    },
-    {
-      type: "input",
-      name: "installation",
-      message: "Please provide any steps required to install your project",
-    },
-    {
-      type: "input",
-      name: "usage",
-      message: "Please provide the user with how they can use your project",
-    },
-    {
-      type: "input",
-      name: "guidelines",
-      message: "Please add a short description for contribution guidelines.",
-    },
-    {
-      type: "input",
-      name: "credits",
-      message: "Please list any collaborators who helped with your project",
-    },
-    {
-      type: "input",
-      name: "testing",
-      message:
-        "Please provide any test instructions for the user(if applicable)",
-    },
-    {
-      type: "list",
-      name: "license",
-      message: "What type of license should your project have?",
-      choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"],
-    },
-  ])
-  .then((data) => {
-    console.log(data);
-    const generateReadMe = generateMarkdown(data);
-    console.log(generateReadMe);
-    fs.writeFile("README.md", generateReadMe, (err) => {
-      err ? console.log(err) : console.log("success");
+const promptUser = () => {
+  return inquirer
+    .prompt([
+      //why is this all of a sudden not allowing me to answer each prompt?
+      {
+        type: "input",
+        name: "username",
+        message: "What is your GitHub username?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your email address?",
+      },
+      {
+        type: "input",
+        name: "title",
+        message: "What is your project's name?",
+      },
+      {
+        type: "input",
+        name: "description",
+        message: "Please provide a short description of your project",
+      },
+      {
+        type: "input",
+        name: "installation",
+        message: "Please provide any steps required to install your project",
+      },
+      {
+        type: "input",
+        name: "usage",
+        message: "Please provide the user with how they can use your project",
+      },
+      {
+        type: "input",
+        name: "guidelines",
+        message: "Please add a short description for contribution guidelines.",
+      },
+      {
+        type: "input",
+        name: "credits",
+        message: "Please list any collaborators who helped with your project",
+      },
+      {
+        type: "input",
+        name: "testing",
+        message:
+          "Please provide any test instructions for the user(if applicable)",
+      },
+      {
+        type: "list",
+        name: "license",
+        message: "What type of license should your project have?",
+        choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"],
+      },
+    ])
+    .then((data) => {
+      console.log(data);
+      const generateReadMe = generateMarkdown(data);
+      console.log(generateReadMe);
+      fs.writeFile("README.md", generateReadMe, (err) => {
+        err ? console.log(err) : console.log("success");
+      });
     });
-  });
-// };
+};
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 // promptUser();
 // const generateREADME = { username, email };
 
 // // TODO: Create a function to initialize app
-// function init() {}
+const init = () => {
+  promptUser();
+};
 
 // Function call to initialize app
-// init();
+init();
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
