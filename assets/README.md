@@ -1,9 +1,9 @@
-# ReadMe.md
+# ReadMe generator
 
 
 ## Description
 
-generate readme files
+This application will run the user through a series of prompts and then generate a ReadMe.md file for them.
 
 ## Table of Contents
 
@@ -18,11 +18,11 @@ generate readme files
 
 ## Installation
 
-npm i to install any necessary dependencies to run the app
+npm i to install any necessary dependancies
 
 ## Usage
 
-N/A
+Answer each prompt with as little or as much detail as desired.  Once each prompt is answered, a ReadMe.md file will be generated for the user.
 
 ## Contributing
 
