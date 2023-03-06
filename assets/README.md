@@ -1,28 +1,28 @@
-# README Generator
+# ReadMe.md
 
 
 ## Description
 
-README Generator will quickly create and format a  README.md file so you can spend more time on the things you want. 
+generate readme files
 
 ## Table of Contents
 
-[Go to Title](#title)
-[Go to Description](#description)
-[Go to Installation](#installation)
-[Go to Usage](#usage)
-[Go to Contributor Guidelines](#guidelines)
-[Go to Credits](#credits)
-[Go to Test Instructions](#testing) 
-[Go to Questions](#questions)
+* [Go to Title](#title)
+* [Go to Description](#description)
+* [Go to Installation](#installation)
+* [Go to Usage](#usage)
+* [Go to Contributor Guidelines](#contributing)
+* [Go to Credits](#credits)
+* [Go to Test Instructions](#testing) 
+* [Go to Questions](#questions)
 
 ## Installation
 
-N/A
+npm i to install any necessary dependencies to run the app
 
 ## Usage
 
-Simply open up this repository in your terminal and answer the prompts.
+N/A
 
 ## Contributing
 
